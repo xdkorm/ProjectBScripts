@@ -1,0 +1,18 @@
+{
+    "name": "ZigdarkS.ProjectB.Service",
+    "rootNamespace": "ZigdarkS.ProjectB.Service",
+    "references": [
+        "GUID:b0214a6008ed146ff8f122a6a9c2f6cc",
+        "GUID:47516e0b63f0cd04bb9d2d15807cdf1e",
+        "GUID:75469ad4d38634e559750d17036d5f7c"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

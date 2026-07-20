@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 3df015af6f5ce1b4c894e18f28a4bf1b
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - _spawnPoint: {instanceID: 0}
+  - _playerContainerPrefab: {instanceID: 0}
+  - _playerHUDView: {instanceID: 0}
+  - _playerConfig: {instanceID: 0}
+  - _startingLoadout: {instanceID: 0}
+  - _crosshairView: {instanceID: 0}
+  - _enemyConfig: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

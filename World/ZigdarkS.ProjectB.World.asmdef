@@ -1,0 +1,16 @@
+{
+    "name": "ZigdarkS.ProjectB.World",
+    "rootNamespace": "ZigdarkS.ProjectB.World",
+    "references": [
+        "GUID:47516e0b63f0cd04bb9d2d15807cdf1e"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
