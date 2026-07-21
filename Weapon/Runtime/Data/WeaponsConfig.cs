@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
-using ZigdarkS.ProjectB.Core;
+using ZigdarkS.ProjectB.Core.UI;
 
 namespace ZigdarkS.ProjectB.Weapon.Data
 {

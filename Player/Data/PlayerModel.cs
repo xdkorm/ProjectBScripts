@@ -1,5 +1,5 @@
 using System;
-using ZigdarkS.ProjectB.Core;
+using ZigdarkS.ProjectB.Core.Combat;
 
 namespace ZigdarkS.ProjectB.Player.Data
 {

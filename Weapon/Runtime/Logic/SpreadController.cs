@@ -1,5 +1,5 @@
 using UnityEngine;
-using ZigdarkS.ProjectB.Service.Weapon;
+using ZigdarkS.ProjectB.Service.Projectiles;
 
 namespace ZigdarkS.ProjectB.Weapon.Logic
 {

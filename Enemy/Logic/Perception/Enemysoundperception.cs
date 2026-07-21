@@ -1,6 +1,6 @@
 using System;
 using UnityEngine;
-using ZigdarkS.ProjectB.Core;
+using ZigdarkS.ProjectB.Core.Audio;
 using ZigdarkS.ProjectB.Enemy.Data;
 
 namespace ZigdarkS.ProjectB.Enemy.Logic.Perception

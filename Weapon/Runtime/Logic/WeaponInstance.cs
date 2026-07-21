@@ -1,11 +1,11 @@
 using System;
 using System.Collections.Generic;
 using UnityEngine;
-using ZigdarkS.ProjectB.Core;
+using ZigdarkS.ProjectB.Core.Combat;
 using ZigdarkS.ProjectB.Weapon.Data;
 using ZigdarkS.ProjectB.Weapon.View;
 using ZigdarkS.ProjectB.Service.Raycast;
-using ZigdarkS.ProjectB.Service.Weapon;
+using ZigdarkS.ProjectB.Service.Projectiles;
 
 namespace ZigdarkS.ProjectB.Weapon.Logic
 {

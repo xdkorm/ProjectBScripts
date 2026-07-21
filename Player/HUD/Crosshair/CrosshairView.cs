@@ -1,6 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
-using ZigdarkS.ProjectB.Core;
+using ZigdarkS.ProjectB.Core.UI;
 
 namespace ZigdarkS.ProjectB.Player.HUD.Crosshair
 {

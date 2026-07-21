@@ -1,4 +1,4 @@
-namespace ZigdarkS.ProjectB.Core
+namespace ZigdarkS.ProjectB.Core.UI
 {
     public enum CrosshairStyle
     {

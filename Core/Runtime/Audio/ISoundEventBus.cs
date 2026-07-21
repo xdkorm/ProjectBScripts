@@ -1,6 +1,6 @@
 using System;
 
-namespace ZigdarkS.ProjectB.Core
+namespace ZigdarkS.ProjectB.Core.Audio
 {
     public interface ISoundEventBus
     {

@@ -1,6 +1,8 @@
 using System;
 using UnityEngine;
 using ZigdarkS.ProjectB.Core;
+using ZigdarkS.ProjectB.Core.Audio;
+using ZigdarkS.ProjectB.Core.Combat;
 using ZigdarkS.ProjectB.Enemy.Data;
 using ZigdarkS.ProjectB.Enemy.Logic.Combat;
 using ZigdarkS.ProjectB.Enemy.Logic.Navigation;

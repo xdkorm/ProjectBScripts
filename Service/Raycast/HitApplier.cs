@@ -1,5 +1,5 @@
 using UnityEngine;
-using ZigdarkS.ProjectB.Core;
+using ZigdarkS.ProjectB.Core.Combat;
 
 namespace ZigdarkS.ProjectB.Service.Raycast
 {
@@ -9,7 +9,11 @@ namespace ZigdarkS.ProjectB.Service.Raycast
         {
             if (damage <= 0f) return;
 
-            if (hit.transform.TryGetComponent<IDamageable>(out var damageable))
+            if (hit.transform.TryGetComponent<IDirectionalDamageable>(out var directional))
+            {
+                directional.TakeDamage(damage, direction);
+            }
+            else if (hit.transform.TryGetComponent<IDamageable>(out var damageable))
             {
                 damageable.TakeDamage(damage);
             }

@@ -2,7 +2,9 @@ using VContainer;
 using VContainer.Unity;
 using UnityEngine;
 using ZigdarkS.ProjectB.Core;
-using ZigdarkS.ProjectB.Service.Weapon;
+using ZigdarkS.ProjectB.Core.Combat;
+using ZigdarkS.ProjectB.Core.Audio;
+using ZigdarkS.ProjectB.Service.Projectiles;
 using ZigdarkS.ProjectB.Player.Logic;
 using ZigdarkS.ProjectB.Player.Logic.Movement;
 using ZigdarkS.ProjectB.Player.View;
@@ -23,7 +25,7 @@ using ZigdarkS.ProjectB.World.Surfaces;
 using ZigdarkS.ProjectB.Weapon.Logic;
 using ZigdarkS.ProjectB.Player.Logic.Weapon;
 
-namespace ZigdarkS.ProjectB.Infrastructure
+namespace ZigdarkS.ProjectB.Infrastructure.DI
 {
     public class GameLifetimeScope : LifetimeScope
     {

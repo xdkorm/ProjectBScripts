@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace ZigdarkS.ProjectB.Core
+namespace ZigdarkS.ProjectB.Core.Audio
 {
     /// <summary>
     /// Звуковое событие, которое распространяется через ISoundEventBus.

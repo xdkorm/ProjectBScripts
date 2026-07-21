@@ -1,12 +1,12 @@
 using System;
 using UnityEngine;
 using UnityEngine.AI;
-using ZigdarkS.ProjectB.Core;
+using ZigdarkS.ProjectB.Core.Combat;
 using ZigdarkS.ProjectB.Enemy.Data;
 
 namespace ZigdarkS.ProjectB.Enemy.View
 {
-    public class EnemyView : MonoBehaviour, IDamageable
+    public class EnemyView : MonoBehaviour, IDirectionalDamageable
     {
         [SerializeField] private NavMeshAgent  _agent;
         [SerializeField] private LineRenderer  _laserLine;
@@ -93,7 +93,9 @@ namespace ZigdarkS.ProjectB.Enemy.View
 
         // ── Урон ──────────────────────────────────────────────────────────────
 
-        public void TakeDamage(float damage)
+        public void TakeDamage(float damage) => TakeDamage(damage, Vector3.zero);
+
+        public void TakeDamage(float damage, Vector3 hitDirection)
         {
             OnDamaged?.Invoke(damage);
         }

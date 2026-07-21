@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace ZigdarkS.ProjectB.Core
+namespace ZigdarkS.ProjectB.Core.Combat
 {
     /// <summary>
     /// Контракт для любого объекта, который может быть целью AI.

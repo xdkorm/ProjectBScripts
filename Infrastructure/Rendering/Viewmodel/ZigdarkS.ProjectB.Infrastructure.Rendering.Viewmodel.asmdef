@@ -1,6 +1,6 @@
 {
-    "name": "ZigdarkS.ProjectB.ViewmodelCustomPass",
-    "rootNamespace": "ZigdarkS.ProjectB.ViewmodelCustomPass",
+    "name": "ZigdarkS.ProjectB.Infrastructure.Rendering.Viewmodel",
+    "rootNamespace": "ZigdarkS.ProjectB.Infrastructure.Rendering.Viewmodel",
     "references": [
         "GUID:457756d89b35d2941b3e7b37b4ece6f1",
         "GUID:df380645f10b7bc4b97d4f5eb6303d95"

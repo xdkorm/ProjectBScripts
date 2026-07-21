@@ -1,6 +1,7 @@
 using System;
 using UnityEngine;
 using ZigdarkS.ProjectB.Core;
+using ZigdarkS.ProjectB.Core.Combat;
 using ZigdarkS.ProjectB.Enemy.Data;
 using ZigdarkS.ProjectB.Enemy.View;
 using ZigdarkS.ProjectB.Enemy.Logic.Perception;

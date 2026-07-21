@@ -1,6 +1,6 @@
 using System;
 using UnityEngine;
-using ZigdarkS.ProjectB.Core;
+using ZigdarkS.ProjectB.Core.Combat;
 using ZigdarkS.ProjectB.Enemy.View;
 
 namespace ZigdarkS.ProjectB.Enemy.Logic.Combat

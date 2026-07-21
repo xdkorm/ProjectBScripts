@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.Pool;
 using VContainer.Unity;
 using ZigdarkS.ProjectB.Service.Raycast;
-using ZigdarkS.ProjectB.Service.Weapon;
+using ZigdarkS.ProjectB.Service.Projectiles;
 
 namespace ZigdarkS.ProjectB.Weapon.Logic
 {

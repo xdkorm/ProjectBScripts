@@ -3,7 +3,7 @@ using ZigdarkS.ProjectB.Weapon.Data;
 using ZigdarkS.ProjectB.Weapon.Logic;
 using ZigdarkS.ProjectB.Weapon.View;
 using ZigdarkS.ProjectB.Service.Raycast;
-using ZigdarkS.ProjectB.Service.Weapon; // Добавили namespace сервиса
+using ZigdarkS.ProjectB.Service.Projectiles;
 
 namespace ZigdarkS.ProjectB.Weapon.Factory
 {

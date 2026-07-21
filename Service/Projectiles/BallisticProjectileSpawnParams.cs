@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-namespace ZigdarkS.ProjectB.Service.Weapon
+namespace ZigdarkS.ProjectB.Service.Projectiles
 {
     public readonly struct BallisticProjectileSpawnParams
     {

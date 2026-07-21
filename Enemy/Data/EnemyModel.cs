@@ -1,6 +1,6 @@
 using System;
 using UnityEngine;
-using ZigdarkS.ProjectB.Core;
+using ZigdarkS.ProjectB.Core.Combat;
 
 namespace ZigdarkS.ProjectB.Enemy.Data
 {

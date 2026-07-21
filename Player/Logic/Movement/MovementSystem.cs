@@ -8,6 +8,7 @@ using ZigdarkS.ProjectB.Player.Logic.Movement.States;
 using ZigdarkS.ProjectB.Player.View;
 using ZigdarkS.ProjectB.Player.Data;
 using ZigdarkS.ProjectB.Weapon.Inventory;
+using ZigdarkS.ProjectB.Core.Audio;
 using ZigdarkS.ProjectB.Weapon.Logic;
 using ZigdarkS.ProjectB.Player.Logic;
 

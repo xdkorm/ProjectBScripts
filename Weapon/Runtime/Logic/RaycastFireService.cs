@@ -1,9 +1,10 @@
 using UnityEngine;
 using ZigdarkS.ProjectB.Core;
-using ZigdarkS.ProjectB.Service.Weapon;
-using ZigdarkS.ProjectB.Weapon.Logic;
+using ZigdarkS.ProjectB.Core.Combat;
+using ZigdarkS.ProjectB.Service.Projectiles;
+using ZigdarkS.ProjectB.Service.Raycast;
 
-namespace ZigdarkS.ProjectB.Service.Raycast
+namespace ZigdarkS.ProjectB.Weapon.Logic
 {
     public class RaycastFireService
     {

@@ -1,6 +1,6 @@
 using System;
 using UnityEngine;
-using ZigdarkS.ProjectB.Core;
+using ZigdarkS.ProjectB.Core.Combat;
 using Unity.Cinemachine;
 
 namespace ZigdarkS.ProjectB.Player.View

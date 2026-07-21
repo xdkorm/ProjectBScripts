@@ -3,7 +3,7 @@ using UnityEngine;
 using ZigdarkS.ProjectB.Weapon.Data;
 using ZigdarkS.ProjectB.Weapon.Logic;
 using ZigdarkS.ProjectB.Weapon.View;
-using ZigdarkS.ProjectB.Service.Weapon;
+using ZigdarkS.ProjectB.Service.Projectiles;
 
 namespace ZigdarkS.ProjectB.Weapon.Logic
 {

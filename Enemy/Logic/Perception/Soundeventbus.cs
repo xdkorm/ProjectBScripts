@@ -1,5 +1,5 @@
 using System;
-using ZigdarkS.ProjectB.Core;
+using ZigdarkS.ProjectB.Core.Audio;
 
 namespace ZigdarkS.ProjectB.Enemy.Logic.Perception
 {
