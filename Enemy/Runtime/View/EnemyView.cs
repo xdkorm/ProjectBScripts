@@ -33,7 +33,7 @@ namespace ZigdarkS.ProjectB.Enemy.View
         public Vector3  Forward         => transform.forward;
         public Vector3  Right           => transform.right;
 
-        public event Action<float> OnDamaged;
+        public event Action<float, Vector3> OnDamaged;
 
         // ── Инициализация ─────────────────────────────────────────────────────
 
@@ -97,7 +97,8 @@ namespace ZigdarkS.ProjectB.Enemy.View
 
         public void TakeDamage(float damage, Vector3 hitDirection)
         {
-            OnDamaged?.Invoke(damage);
+            _lastHitDirection = hitDirection;
+            OnDamaged?.Invoke(damage, hitDirection);
         }
 
         // ── Движение ──────────────────────────────────────────────────────────

@@ -10,8 +10,8 @@ namespace ZigdarkS.ProjectB.Enemy.View
         Vector3 EyePosition { get; }
         Vector3 Forward { get; }
         Vector3 Right { get; }
-
-        event Action<float> OnDamaged;
+        
+        public event Action<float, Vector3> OnDamaged;
 
         void Initialize();
         void EnableRagdoll(bool enable);

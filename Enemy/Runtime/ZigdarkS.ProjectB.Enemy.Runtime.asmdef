@@ -1,12 +1,9 @@
 {
-    "name": "ZigdarkS.ProjectB.Player",
-    "rootNamespace": "ZigdarkS.ProjectB.Player",
+    "name": "ZigdarkS.ProjectB.Enemy.Runtime",
+    "rootNamespace": "ZigdarkS.ProjectB.Enemy",
     "references": [
-        "GUID:4bf4392d1dc9149408a5b3e53cc3fc77",
         "GUID:47516e0b63f0cd04bb9d2d15807cdf1e",
-        "GUID:4307f53044263cf4b835bd812fc161a4",
-        "GUID:b0214a6008ed146ff8f122a6a9c2f6cc",
-        "GUID:6055be8ebefd69e48b49212b09b47b2f"
+        "GUID:b0214a6008ed146ff8f122a6a9c2f6cc"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

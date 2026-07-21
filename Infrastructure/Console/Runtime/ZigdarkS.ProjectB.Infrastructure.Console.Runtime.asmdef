@@ -1,10 +1,7 @@
 {
-    "name": "ZigdarkS.ProjectB.Enemy",
-    "rootNamespace": "ZigdarkS.ProjectB.Enemy",
-    "references": [
-        "GUID:47516e0b63f0cd04bb9d2d15807cdf1e",
-        "GUID:b0214a6008ed146ff8f122a6a9c2f6cc"
-    ],
+    "name": "ZigdarkS.ProjectB.Infrastructure.Console.Runtime",
+    "rootNamespace": "ZigdarkS.ProjectB.Infrastructure.Console",
+    "references": [],
     "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
