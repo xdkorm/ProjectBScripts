@@ -14,11 +14,11 @@ namespace ZigdarkS.ProjectB.Weapon.Logic
         private readonly WeaponConfig _config;
         private readonly WeaponView _view;
         private readonly RaycastFireService _fireService;
-        private readonly WeaponEffectsService _effectsService;
+        private readonly WeaponEffectsCoordinator _effectsService;
         private readonly WeaponRuntimeStats _stats;
         private readonly FireModeController _fireModeController;
         private readonly SpreadController _spreadController;
-        private readonly BallisticProjectileService _ballisticService;
+        private readonly BallisticProjectileSimulator _ballisticService;
         private readonly ActionCycleController _actionCycleController;
         private readonly WeaponStateMachine _stateMachine;
         private readonly List<WeaponModule> _equippedModules = new();
@@ -121,8 +121,8 @@ namespace ZigdarkS.ProjectB.Weapon.Logic
             WeaponView view,
             RaycastFireService fireService,
             IMovementSpreadProvider movementSpreadProvider,
-            WeaponEffectsService effectsService,
-            BallisticProjectileService ballisticService,
+            WeaponEffectsCoordinator effectsService,
+            BallisticProjectileSimulator ballisticService,
             AmmoState ammoState,
             ReloadController reloadController)
         {

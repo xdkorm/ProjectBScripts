@@ -15,7 +15,7 @@ namespace ZigdarkS.ProjectB.Weapon.Logic
         private readonly Data.ReloadMode _mode;
         private readonly AmmoState _state;
         private readonly WeaponView _view;
-        private readonly WeaponEffectsService _effectsService;
+        private readonly WeaponEffectsCoordinator _effectsService;
 
         private InternalState _internalState = InternalState.Idle;
         private bool _isFirstStep;
@@ -29,7 +29,7 @@ namespace ZigdarkS.ProjectB.Weapon.Logic
         public event Action OnReloadCancelled;
 
         public ReloadController(Data.AmmoSettings settings, Data.ReloadMode mode, AmmoState state,
-            WeaponView view, WeaponEffectsService effectsService)
+            WeaponView view, WeaponEffectsCoordinator effectsService)
         {
             _settings = settings;
             _mode = mode;

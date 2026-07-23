@@ -9,10 +9,10 @@ namespace ZigdarkS.ProjectB.Weapon.Logic
     /// </summary>
     public class DecalSpawner
     {
-        private readonly GameObjectPoolManager _pools;
+        private readonly PrefabPoolRegistry _pools;
         private const float SurfaceOffset = 0.001f;
 
-        public DecalSpawner(GameObjectPoolManager pools)
+        public DecalSpawner(PrefabPoolRegistry pools)
         {
             _pools = pools;
         }

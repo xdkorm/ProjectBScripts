@@ -10,10 +10,10 @@ namespace ZigdarkS.ProjectB.Weapon.Logic
     /// </summary>
     public class ImpactSoundPlayer
     {
-        private readonly GameObjectPoolManager _pools;
+        private readonly PrefabPoolRegistry _pools;
         private readonly GameObject _audioSourcePrefab;
 
-        public ImpactSoundPlayer(GameObjectPoolManager pools, GameObject audioSourcePrefab)
+        public ImpactSoundPlayer(PrefabPoolRegistry pools, GameObject audioSourcePrefab)
         {
             _pools = pools;
             _audioSourcePrefab = audioSourcePrefab;

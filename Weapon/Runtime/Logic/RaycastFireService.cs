@@ -9,9 +9,9 @@ namespace ZigdarkS.ProjectB.Weapon.Logic
     public class RaycastFireService
     {
         private readonly HitApplier _hitApplier;
-        private readonly WeaponEffectsService _effectsService;
+        private readonly WeaponEffectsCoordinator _effectsService;
 
-        public RaycastFireService(HitApplier hitApplier, WeaponEffectsService effectsService)
+        public RaycastFireService(HitApplier hitApplier, WeaponEffectsCoordinator effectsService)
         {
             _hitApplier = hitApplier;
             _effectsService = effectsService;

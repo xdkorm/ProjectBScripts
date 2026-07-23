@@ -8,9 +8,9 @@ namespace ZigdarkS.ProjectB.Weapon.Logic
     /// </summary>
     public class ImpactParticleSpawner
     {
-        private readonly GameObjectPoolManager _pools;
+        private readonly PrefabPoolRegistry _pools;
 
-        public ImpactParticleSpawner(GameObjectPoolManager pools)
+        public ImpactParticleSpawner(PrefabPoolRegistry pools)
         {
             _pools = pools;
         }

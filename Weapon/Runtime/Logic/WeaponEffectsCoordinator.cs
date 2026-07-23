@@ -2,6 +2,7 @@ using UnityEngine;
 using ZigdarkS.ProjectB.World.Surfaces;
 using ZigdarkS.ProjectB.Service.Pooling;
 using ZigdarkS.ProjectB.Weapon.View;
+using ZigdarkS.ProjectB.Core.Combat;
 
 namespace ZigdarkS.ProjectB.Weapon.Logic
 {
@@ -10,7 +11,7 @@ namespace ZigdarkS.ProjectB.Weapon.Logic
     /// спавнерами эффектов (частицы, декали, звук) и дропом магазина.
     /// Сам эффекты не создаёт — только координирует специализированные классы.
     /// </summary>
-    public class WeaponEffectsService
+    public class WeaponEffectsCoordinator : IImpactEffectSpawner
     {
         private readonly ImpactEffectDatabase _database;
         private readonly ISurfaceResolver _surfaceResolver;
@@ -19,7 +20,7 @@ namespace ZigdarkS.ProjectB.Weapon.Logic
         private readonly ImpactSoundPlayer _soundPlayer;
         private readonly MagazineDropSpawner _magazineDropSpawner;
 
-        public WeaponEffectsService(
+        public WeaponEffectsCoordinator(
             ImpactEffectDatabase database,
             ISurfaceResolver surfaceResolver,
             WeaponEffectsConfig config)
@@ -28,7 +29,7 @@ namespace ZigdarkS.ProjectB.Weapon.Logic
             _surfaceResolver = surfaceResolver;
 
             var poolRoot = new GameObject("[ImpactEffectsPool]").transform;
-            var pools = new GameObjectPoolManager(poolRoot);
+            var pools = new PrefabPoolRegistry(poolRoot);
 
             _particleSpawner = new ImpactParticleSpawner(pools);
             _decalSpawner = new DecalSpawner(pools);

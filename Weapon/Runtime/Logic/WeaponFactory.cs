@@ -11,14 +11,14 @@ namespace ZigdarkS.ProjectB.Weapon.Factory
     {
         private readonly RaycastFireService _fireService;
         private readonly IMovementSpreadProvider _movementSpreadProvider;
-        private readonly WeaponEffectsService _effectsService;
-        private readonly BallisticProjectileService _ballisticService;
+        private readonly WeaponEffectsCoordinator _effectsService;
+        private readonly BallisticProjectileSimulator _ballisticService;
 
         public WeaponFactory(
             RaycastFireService fireService,
             IMovementSpreadProvider movementSpreadProvider,
-            WeaponEffectsService effectsService,
-            BallisticProjectileService ballisticService)
+            WeaponEffectsCoordinator effectsService,
+            BallisticProjectileSimulator ballisticService)
         {
             _fireService = fireService;
             _movementSpreadProvider = movementSpreadProvider;

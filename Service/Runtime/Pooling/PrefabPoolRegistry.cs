@@ -9,13 +9,13 @@ namespace ZigdarkS.ProjectB.Service.Pooling
     /// Не завязан на конкретную предметную область (оружие, VFX и т.д.) —
     /// может использоваться где угодно, где нужен пул инстансов префаба.
     /// </summary>
-    public class GameObjectPoolManager
+    public class PrefabPoolRegistry
     {
         private readonly Dictionary<GameObject, ObjectPool<GameObject>> _pools = new();
         private readonly Transform _poolRoot;
         private readonly int _defaultCapacity;
 
-        public GameObjectPoolManager(Transform poolRoot, int defaultCapacity = 16)
+        public PrefabPoolRegistry(Transform poolRoot, int defaultCapacity = 16)
         {
             _poolRoot = poolRoot;
             _defaultCapacity = defaultCapacity;

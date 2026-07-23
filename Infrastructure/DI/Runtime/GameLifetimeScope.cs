@@ -23,7 +23,7 @@ using ZigdarkS.ProjectB.Enemy.Logic.Navigation;
 using ZigdarkS.ProjectB.Enemy.Logic.Perception;
 using ZigdarkS.ProjectB.World.Surfaces;
 using ZigdarkS.ProjectB.Weapon.Logic;
-using ZigdarkS.ProjectB.Player.Logic.Weapon;
+using ZigdarkS.ProjectB.Player.Logic.Weapon; 
 
 namespace ZigdarkS.ProjectB.Infrastructure.DI
 {
@@ -101,6 +101,8 @@ namespace ZigdarkS.ProjectB.Infrastructure.DI
             builder.Register<MovementStateFactory>(Lifetime.Scoped);
             builder.Register<VaultDetector>(Lifetime.Scoped);
             builder.Register<PlayerSettings>(Lifetime.Scoped);
+            builder.Register<FallDistanceTracker>(Lifetime.Scoped);
+            builder.Register<FootstepEmitter>(Lifetime.Scoped);
             builder.Register<WeaponInventory>(Lifetime.Scoped).As<IWeaponInventory>().AsSelf();
 //---------------------------------------------------------------------------------------------------//
             builder.Register<HitApplier>(Lifetime.Singleton);
@@ -108,9 +110,12 @@ namespace ZigdarkS.ProjectB.Infrastructure.DI
             builder.Register<EnemySquadRegistry>(Lifetime.Singleton);
             builder.Register<ISurfaceResolver, SurfaceResolver>(Lifetime.Singleton);
             builder.Register<InputService>(Lifetime.Singleton).AsImplementedInterfaces().AsSelf();
-            builder.Register<WeaponEffectsService>(Lifetime.Singleton);
             builder.Register<ISoundEventBus, SoundEventBus>(Lifetime.Singleton);
-            builder.Register<IFovCalculator>(Lifetime.Singleton);
+            builder.Register<WeaponFovCalculator>(Lifetime.Singleton).As<IFovCalculator>();
+
+            builder.Register<WeaponEffectsCoordinator>(Lifetime.Singleton)
+                .As<IImpactEffectSpawner>()
+                .AsSelf();
 //---------------------------------------------------------------------------------------------------//
 ///////////////////////////////////////////////////////////////////////////////////////////////////////
                             // Состояния движения (Transient)
@@ -178,7 +183,7 @@ namespace ZigdarkS.ProjectB.Infrastructure.DI
             builder.RegisterEntryPoint<MovementSystem>().AsSelf();
             builder.RegisterEntryPoint<CrosshairPresenter>();
             builder.RegisterEntryPoint<MovementSpreadService>().AsSelf();
-            builder.RegisterEntryPoint<BallisticProjectileService>().AsSelf();
+            builder.RegisterEntryPoint<BallisticProjectileSimulator>().AsSelf();
             builder.RegisterEntryPoint<CameraSwayController>();
             builder.RegisterEntryPoint<WeaponSwitchingSystem>();
             builder.RegisterEntryPoint<FireModeSystem>();

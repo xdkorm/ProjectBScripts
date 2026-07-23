@@ -1,0 +1,24 @@
+{
+    "name": "ZigdarkS.ProjectB.Infrastructure.DI.Runtime",
+    "rootNamespace": "ZigdarkS.ProjectB.Infrastructure.DI",
+    "references": [
+        "GUID:b0214a6008ed146ff8f122a6a9c2f6cc",
+        "GUID:47516e0b63f0cd04bb9d2d15807cdf1e",
+        "GUID:07fc1b9e0abc6e643a29194c078b762f",
+        "GUID:cf71010fa41aece46b109fb143410dbd",
+        "GUID:9731a6ad9af58ee4b831cd033f3812f5",
+        "GUID:90921db1bc40d3d48bca02d9381ce988",
+        "GUID:b87afb871b34b884490d0396955f400f",
+        "GUID:4bf4392d1dc9149408a5b3e53cc3fc77",
+        "GUID:34941e003b485e74f879745d47680690"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
