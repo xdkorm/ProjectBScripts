@@ -1,11 +1,12 @@
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+using VContainer.Unity;
 using ZigdarkS.ProjectB.Weapon.Logic;
 
 namespace ZigdarkS.ProjectB.Weapon.Inventory
 {
-    public class WeaponInventory : IWeaponInventory
+    public class WeaponInventory : IWeaponInventory, ITickable
     {
         private readonly Dictionary<int, IWeapon> _slots = new();
         private int _currentSlotIndex = 0;

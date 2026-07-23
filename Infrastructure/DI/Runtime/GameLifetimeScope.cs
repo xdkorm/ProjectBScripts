@@ -191,6 +191,7 @@ namespace ZigdarkS.ProjectB.Infrastructure.DI
             builder.RegisterEntryPoint<WeaponReloadSystem>();
             builder.RegisterEntryPoint<WeaponActionCycleSystem>();
             builder.RegisterEntryPoint<PlayerShootingSystem>();
+            builder.Register<WeaponInventory>(Lifetime.Scoped).As<IWeaponInventory>().As<ITickable>().AsSelf();
             builder.Register<IActivePlayerView, ActivePlayerViewTracker>(Lifetime.Singleton).AsSelf();
         }
     }

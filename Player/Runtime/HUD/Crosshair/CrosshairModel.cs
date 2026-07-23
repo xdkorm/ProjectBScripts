@@ -61,9 +61,7 @@ namespace ZigdarkS.ProjectB.Player.HUD.Crosshair
         public void UpdateAdsProgress(float progress)
         {
             if (Mathf.Approximately(AdsProgress, progress)) return;
-            
             AdsProgress = progress;
-            OnSettingsChanged?.Invoke();
         }
     }
 }
