@@ -19,7 +19,7 @@ namespace ZigdarkS.ProjectB.Player.Logic
 
         public void Tick()
         {
-            var activeWeapon = _inventory.ActiveWeapon;
+            var activeWeapon = _inventory.ReadyWeapon;
             if (activeWeapon == null) return;
 
             bool isSwitchingNow = _inputService.IsSwitchingFireModes();

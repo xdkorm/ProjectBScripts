@@ -20,6 +20,7 @@ namespace ZigdarkS.ProjectB.Weapon.Inventory
         public IWeapon ActiveWeapon => _slots.TryGetValue(_currentSlotIndex, out var w) ? w : null;
         public WeaponEquipState EquipState => _equipState;
         public bool IsWeaponReady => _equipState == WeaponEquipState.Ready;
+        public IWeapon ReadyWeapon => IsWeaponReady ? ActiveWeapon : null;
 
         public void SetWeaponToSlot(int slotIndex, IWeapon weapon)
         {

@@ -22,8 +22,8 @@ namespace ZigdarkS.ProjectB.Player.Logic
         /// </summary>
         public void Tick()
         {
-            var activeWeapon = _inventory.ActiveWeapon;
-            if (activeWeapon == null || !_inventory.IsWeaponReady) return;
+            var activeWeapon = _inventory.ReadyWeapon;
+            if (activeWeapon == null) return;
 
             bool isCyclePressed = _inputService.IsCyclingAction();
             bool isRisingEdge = isCyclePressed && !_wasCyclePressedLastFrame;

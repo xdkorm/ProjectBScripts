@@ -18,8 +18,8 @@ namespace ZigdarkS.ProjectB.Player.Logic
 
         public void Tick()
         {
-            var activeWeapon = _inventory.ActiveWeapon;
-            if (activeWeapon == null || !_inventory.IsWeaponReady) return;
+            var activeWeapon = _inventory.ReadyWeapon;
+            if (activeWeapon == null) return;
 
             bool isReloadPressed = _inputService.IsReloading();
             if (isReloadPressed && !_wasReloadPressedLastFrame)

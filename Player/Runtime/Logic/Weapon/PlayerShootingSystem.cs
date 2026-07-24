@@ -42,7 +42,7 @@ namespace ZigdarkS.ProjectB.Player.Logic
             var view = _activeView.Current;
             if (view == null) return;
 
-            var activeWeapon = _inventory.ActiveWeapon;
+            var activeWeapon = _inventory.ReadyWeapon;
             if (activeWeapon == null) return;
 
             UpdateSprintFireGate();
